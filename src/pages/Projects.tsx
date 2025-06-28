@@ -5,56 +5,56 @@ import { ExternalLink, Github, Eye } from 'lucide-react';
 export const Projects: React.FC = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with payment integration, user authentication, and admin dashboard.',
+      title: 'Cineverse',
+      description: "Cineverse 2025 is a modern, responsive movie browsing web app built using React.js. It allows users to search view movie details, and explore genres in an easy-to-use interface. The app features dynamic routing, clean UI, and real-time filtering, simulating an IMDb-style experience for movie enthusiasts.",
       image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'JWT'],
-      githubUrl: '#',
-      liveUrl: '#',
+      githubUrl: 'https://github.com/DIKSINTH/cineflix',
+      liveUrl: 'https://cineverse2025.netlify.app/',
       featured: true
     },
     {
-      title: 'Task Management App',
+      title: 'Tic-Tac-Toe',
       description: 'A collaborative task management application with real-time updates and team collaboration features.',
       image: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600',
       technologies: ['Vue.js', 'Express.js', 'Socket.io', 'PostgreSQL'],
-      githubUrl: '#',
-      liveUrl: '#',
-      featured: true
+      githubUrl: 'https://github.com/DIKSINTH/Tic-Tac-Toe',
+      liveUrl: 'https://diksinth.github.io/Tic-Tac-Toe/',
+      featured: false
     },
     {
-      title: 'Weather Dashboard',
+      title: 'Rock Paper Scissor',
       description: 'A responsive weather application with location-based forecasts and interactive charts.',
       image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
       technologies: ['React', 'TypeScript', 'Chart.js', 'OpenWeather API'],
-      githubUrl: '#',
-      liveUrl: '#',
+      githubUrl: 'https://github.com/DIKSINTH/RPS',
+      liveUrl: 'https://rock-paper-scissor-39.netlify.app/',
       featured: false
     },
     {
-      title: 'Social Media Dashboard',
+      title: 'Play with Panda',
       description: 'A comprehensive dashboard for managing multiple social media accounts and analytics.',
       image: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=600',
       technologies: ['Next.js', 'Prisma', 'NextAuth.js', 'Tailwind CSS'],
-      githubUrl: '#',
-      liveUrl: '#',
+      githubUrl: 'https://github.com/DIKSINTH/Game',
+      liveUrl: 'https://play-with-panda.netlify.app/',
       featured: false
     },
     {
-      title: 'Portfolio Website',
+      title: 'QuickMath (Standard Calculator)',
       description: 'A modern, responsive portfolio website with smooth animations and interactive elements.',
       image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
       technologies: ['React', 'Framer Motion', 'Tailwind CSS', 'Vite'],
-      githubUrl: '#',
-      liveUrl: '#',
+      githubUrl: 'https://github.com/DIKSINTH/QuickMath',
+      liveUrl: 'https://diksinth.github.io/QuickMath/',
       featured: false
     },
     {
-      title: 'AI Chatbot Interface',
+      title: 'My Portfolio',
       description: 'An intelligent chatbot interface with natural language processing and machine learning capabilities.',
       image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600',
       technologies: ['Python', 'Flask', 'OpenAI API', 'React', 'WebSocket'],
-      githubUrl: '#',
+      githubUrl: 'https://github.com/DIKSINTH/React_Portfolio',
       liveUrl: '#',
       featured: false
     }

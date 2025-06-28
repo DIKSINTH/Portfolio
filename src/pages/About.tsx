@@ -4,10 +4,10 @@ import { Award, Book, Coffee, Heart } from 'lucide-react';
 
 export const About: React.FC = () => {
   const stats = [
-    { icon: Award, label: 'Years Experience', value: '3+' },
-    { icon: Book, label: 'Projects Completed', value: '25+' },
-    { icon: Coffee, label: 'Cups of Coffee', value: '500+' },
-    { icon: Heart, label: 'Happy Clients', value: '15+' },
+    { icon: Award, label: 'Years Experience', value: '0' },
+    { icon: Book, label: 'Projects Completed', value: '5+' },
+    { icon: Coffee, label: 'Cups of Coffee', value: '50+' },
+    { icon: Heart, label: 'Happy Clients', value: '0' },
   ];
 
   return (

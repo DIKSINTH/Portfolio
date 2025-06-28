@@ -48,21 +48,21 @@ export const Contact: React.FC = () => {
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+919042594468',
+      href: 'tel:+919042594468'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'New York, NY',
+      value: 'Sivakasi, Tamil Nadu',
       href: '#'
     }
   ];
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
+    { icon: Github, href: 'https://github.com/DIKSINTH', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/diksinth-s/', label: 'LinkedIn' },
+    { icon: Twitter, href: 'https://x.com/DiksinthS', label: 'Twitter' },
   ];
 
   return (

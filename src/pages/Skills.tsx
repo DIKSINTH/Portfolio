@@ -8,12 +8,11 @@ export const Skills: React.FC = () => {
       title: 'Frontend Development',
       icon: Globe,
       skills: [
-        { name: 'React', level: 95 },
-        { name: 'TypeScript', level: 90 },
-        { name: 'Vue.js', level: 85 },
-        { name: 'Next.js', level: 88 },
-        { name: 'Tailwind CSS', level: 92 },
-        { name: 'Framer Motion', level: 80 }
+        { name: 'React', level: 90 },
+        { name: 'Tailwind CSS', level: 90 },
+        { name: 'Framer Motion', level: 80 },
+        { name: 'HTML', level: 95 },
+        { name: 'CSS', level: 85 }, { name: 'React Router', level: 80 },
       ]
     },
     {
@@ -23,9 +22,6 @@ export const Skills: React.FC = () => {
         { name: 'Node.js', level: 92 },
         { name: 'Express.js', level: 90 },
         { name: 'Python', level: 85 },
-        { name: 'REST APIs', level: 95 },
-        { name: 'GraphQL', level: 78 },
-        { name: 'Socket.io', level: 82 }
       ]
     },
     {
@@ -33,35 +29,16 @@ export const Skills: React.FC = () => {
       icon: Database,
       skills: [
         { name: 'MongoDB', level: 90 },
-        { name: 'PostgreSQL', level: 88 },
-        { name: 'Redis', level: 82 },
-        { name: 'Firebase', level: 85 },
-        { name: 'Prisma', level: 80 },
         { name: 'MySQL', level: 78 }
-      ]
-    },
-    {
-      title: 'Mobile Development',
-      icon: Smartphone,
-      skills: [
-        { name: 'React Native', level: 85 },
-        { name: 'Flutter', level: 75 },
-        { name: 'iOS Development', level: 70 },
-        { name: 'Android Development', level: 72 },
-        { name: 'Expo', level: 88 },
-        { name: 'PWA', level: 90 }
       ]
     },
     {
       title: 'Cloud & DevOps',
       icon: Cloud,
       skills: [
-        { name: 'AWS', level: 85 },
-        { name: 'Docker', level: 88 },
-        { name: 'Kubernetes', level: 75 },
-        { name: 'CI/CD', level: 82 },
+      
         { name: 'Netlify', level: 90 },
-        { name: 'Vercel', level: 92 }
+        { name: 'Github Pages', level: 85 },
       ]
     },
     {
@@ -69,11 +46,10 @@ export const Skills: React.FC = () => {
       icon: Settings,
       skills: [
         { name: 'Git', level: 95 },
+        { name: 'GitHub', level: 95 },
         { name: 'VS Code', level: 98 },
         { name: 'Figma', level: 85 },
-        { name: 'Postman', level: 90 },
-        { name: 'Jest', level: 80 },
-        { name: 'Webpack', level: 78 }
+        { name: 'Postman', level: 90 }
       ]
     }
   ];

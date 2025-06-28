@@ -5,10 +5,10 @@ import { Calendar, MapPin, ExternalLink } from 'lucide-react';
 export const Experience: React.FC = () => {
   const experiences = [
     {
-      title: 'Senior Full Stack Developer',
-      company: 'Tech Solutions Inc.',
-      location: 'Remote',
-      period: '2022 - Present',
+      title: 'Full Stack Developer Intern',
+      company: 'Walachain Technologies',
+      location: 'Sattur, TamilNadu',
+      period: 'May, 2025 - Present',
       description: [
         'Led development of scalable web applications using React, Node.js, and MongoDB',
         'Collaborated with cross-functional teams to deliver high-quality software solutions',
@@ -18,10 +18,10 @@ export const Experience: React.FC = () => {
       technologies: ['React', 'Node.js', 'MongoDB', 'AWS', 'Docker']
     },
     {
-      title: 'Full Stack Developer',
-      company: 'Digital Innovations Ltd.',
-      location: 'New York, NY',
-      period: '2020 - 2022',
+      title: 'Web Developer Intern',
+      company: 'Aathesh Softtech Infotech PVT LMD',
+      location: 'Sivakasi, TamilNadu',
+      period: 'May, 2024 - June, 2024 (1 Month)',
       description: [
         'Developed and maintained multiple client-facing web applications',
         'Optimized application performance resulting in 40% faster load times',
@@ -29,20 +29,8 @@ export const Experience: React.FC = () => {
         'Participated in agile development processes and sprint planning'
       ],
       technologies: ['Vue.js', 'Express.js', 'PostgreSQL', 'Redis', 'Stripe']
-    },
-    {
-      title: 'Junior Web Developer',
-      company: 'StartUp Hub',
-      location: 'San Francisco, CA',
-      period: '2019 - 2020',
-      description: [
-        'Built responsive web interfaces using HTML, CSS, and JavaScript',
-        'Assisted in backend API development and database design',
-        'Participated in daily standups and sprint retrospectives',
-        'Contributed to open-source projects and technical documentation'
-      ],
-      technologies: ['HTML/CSS', 'JavaScript', 'Python', 'Django', 'MySQL']
     }
+   
   ];
 
   return (

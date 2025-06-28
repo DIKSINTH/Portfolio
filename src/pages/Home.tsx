@@ -4,6 +4,12 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 
 export const Home: React.FC = () => {
+  function handleDownload(){
+    const link = document.createElement('a');
+    link.href = './diksinth_resume.pdf'; // path from public folder
+    link.download = 'Diksinth_S_Resume.pdf'; // download name
+    link.click();
+  }
   return (
     <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
@@ -59,7 +65,7 @@ export const Home: React.FC = () => {
               <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>
             
-            <button className="group inline-flex items-center px-8 py-4 border-2 border-white/20 text-white font-medium rounded-full hover:bg-white/10 transition-all duration-300 transform hover:scale-105">
+            <button onClick={handleDownload} className="group inline-flex items-center px-8 py-4 border-2 border-white/20 text-white font-medium rounded-full hover:bg-white/10 transition-all duration-300 transform hover:scale-105">
               <Download size={20} className="mr-2 group-hover:animate-bounce" />
               Download Resume
             </button>
@@ -72,8 +78,8 @@ export const Home: React.FC = () => {
             className="flex justify-center space-x-6"
           >
             {[
-              { icon: Github, href: '#', label: 'GitHub' },
-              { icon: Linkedin, href: '#', label: 'LinkedIn' },
+              { icon: Github, href: 'https://github.com/DIKSINTH', label: 'GitHub' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/diksinth-s/', label: 'LinkedIn' },
               { icon: Mail, href: '/contact', label: 'Email' },
             ].map(({ icon: Icon, href, label }) => (
               <motion.a
