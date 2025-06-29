@@ -82,7 +82,7 @@ export const Projects: React.FC = () => {
         "Netlify",
       ],
       githubUrl: "https://github.com/DIKSINTH/React_Portfolio",
-      liveUrl: "#",
+      liveUrl: "https://diksinth-s-portfolio.netlify.app/",
       featured: false,
     },
     {
