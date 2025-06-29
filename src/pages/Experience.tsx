@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Calendar, MapPin, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Experience: React.FC = () => {
   const experiences = [
@@ -130,13 +131,13 @@ export const Experience: React.FC = () => {
             <p className="text-gray-300 mb-6">
               I'm always interested in new opportunities and exciting projects.
             </p>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Get In Touch
               <ExternalLink size={20} className="ml-2" />
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>
