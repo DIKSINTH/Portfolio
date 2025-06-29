@@ -1,13 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
-
+import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
+import Diksinth from "../images/diksinth.jpg"; // Adjust the path as needed
 export const Home: React.FC = () => {
-  function handleDownload(){
-    const link = document.createElement('a');
-    link.href = './diksinth_resume.pdf'; // path from public folder
-    link.download = 'Diksinth_S_Resume.pdf'; // download name
+  function handleDownload() {
+    const link = document.createElement("a");
+    link.href = "./diksinth_resume.pdf"; // path from public folder
+    link.download = "Diksinth_S_Resume.pdf"; // download name
     link.click();
   }
   return (
@@ -25,7 +25,11 @@ export const Home: React.FC = () => {
             className="mb-8"
           >
             <div className="w-32 h-32 mx-auto bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-4xl font-bold shadow-2xl">
-              DS
+              <img
+                src={Diksinth}
+                style={{ borderRadius: "90%" }}
+                alt="diksinth"
+              ></img>
             </div>
           </motion.div>
 
@@ -35,7 +39,7 @@ export const Home: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-4xl sm:text-6xl font-bold text-white mb-6"
           >
-            Hi, I'm{' '}
+            Hi, I'm{" "}
             <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
               Diksinth S
             </span>
@@ -47,8 +51,9 @@ export const Home: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto"
           >
-            A passionate <span className="text-blue-400">Full Stack Developer</span> creating 
-            innovative digital solutions with modern technologies
+            A motivated{" "}
+            <span className="text-blue-400">Full Stack Developer</span> excited
+            to learn and build web apps with modern tools and technologies
           </motion.p>
 
           <motion.div
@@ -62,10 +67,16 @@ export const Home: React.FC = () => {
               className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               View My Work
-              <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight
+                size={20}
+                className="ml-2 group-hover:translate-x-1 transition-transform"
+              />
             </Link>
-            
-            <button onClick={handleDownload} className="group inline-flex items-center px-8 py-4 border-2 border-white/20 text-white font-medium rounded-full hover:bg-white/10 transition-all duration-300 transform hover:scale-105">
+
+            <button
+              onClick={handleDownload}
+              className="group inline-flex items-center px-8 py-4 border-2 border-white/20 text-white font-medium rounded-full hover:bg-white/10 transition-all duration-300 transform hover:scale-105"
+            >
               <Download size={20} className="mr-2 group-hover:animate-bounce" />
               Download Resume
             </button>
@@ -78,9 +89,17 @@ export const Home: React.FC = () => {
             className="flex justify-center space-x-6"
           >
             {[
-              { icon: Github, href: 'https://github.com/DIKSINTH', label: 'GitHub' },
-              { icon: Linkedin, href: 'https://www.linkedin.com/in/diksinth-s/', label: 'LinkedIn' },
-              { icon: Mail, href: '/contact', label: 'Email' },
+              {
+                icon: Github,
+                href: "https://github.com/DIKSINTH",
+                label: "GitHub",
+              },
+              {
+                icon: Linkedin,
+                href: "https://www.linkedin.com/in/diksinth-s/",
+                label: "LinkedIn",
+              },
+              { icon: Mail, href: "/contact", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <motion.a
                 key={label}

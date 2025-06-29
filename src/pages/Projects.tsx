@@ -1,67 +1,104 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ExternalLink, Github, Eye } from 'lucide-react';
-
+import React from "react";
+import { motion } from "framer-motion";
+import { ExternalLink, Github, Eye } from "lucide-react";
+import cineverseImage from "../images/cineverse.jpg"; // Adjust the path as needed
+import tictacToe from "../images/ttt.jpg"; // Adjust the path as needed
+import rockpaperScissor from "../images/rps.jpg"; // Adjust the path as needed
+import playwithPanda from "../images/play_with_panda.jpg"; // Adjust the path as needed
+import quickMath from "../images/quickmath.jpg"; // Adjust the path as needed
+import myPortfolio from "../images/my_portfolio.jpg"; // Adjust the path as needed
+import cineVerse2024 from "../images/cineverse2024.jpg"; // Adjust the path as needed
 export const Projects: React.FC = () => {
   const projects = [
     {
-      title: 'Cineverse',
-      description: "Cineverse 2025 is a modern, responsive movie browsing web app built using React.js. It allows users to search view movie details, and explore genres in an easy-to-use interface. The app features dynamic routing, clean UI, and real-time filtering, simulating an IMDb-style experience for movie enthusiasts.",
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'JWT'],
-      githubUrl: 'https://github.com/DIKSINTH/cineflix',
-      liveUrl: 'https://cineverse2025.netlify.app/',
-      featured: true
+      title: "Cineverse",
+      description:
+        "Cineverse 2025 is a modern, responsive movie browsing web app built using React.js. It allows users to search view movie details, and explore genres in an easy-to-use interface. The app features dynamic routing, clean UI, and real-time filtering, simulating an IMDb-style experience for movie enthusiasts.",
+      image: cineverseImage,
+      technologies: [
+        "React.js",
+        "Tailwind CSS",
+        "React Router DOM",
+        "Framer Motion",
+        "GSAP",
+        "Lenis",
+      ],
+      githubUrl: "https://github.com/DIKSINTH/cineflix",
+      liveUrl: "https://cineverse2025.netlify.app/",
+      featured: true,
     },
     {
-      title: 'Tic-Tac-Toe',
-      description: 'A collaborative task management application with real-time updates and team collaboration features.',
-      image: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['Vue.js', 'Express.js', 'Socket.io', 'PostgreSQL'],
-      githubUrl: 'https://github.com/DIKSINTH/Tic-Tac-Toe',
-      liveUrl: 'https://diksinth.github.io/Tic-Tac-Toe/',
-      featured: false
+      title: "Tic-Tac-Toe",
+      description:
+        "Tic-Tac-Toe is a simple and interactive web-based game built using HTML, CSS, and JavaScript. It allows two players to take turns marking X and O on a 3x3 layout, with automatic win and draw detection. The design is responsive and user-friendly, making it a great example of core web development skills.",
+      image: tictacToe,
+      technologies: ["HTML5", "CSS", "Javascript"],
+      githubUrl: "https://github.com/DIKSINTH/Tic-Tac-Toe",
+      liveUrl: "https://diksinth.github.io/Tic-Tac-Toe/",
+      featured: false,
     },
     {
-      title: 'Rock Paper Scissor',
-      description: 'A responsive weather application with location-based forecasts and interactive charts.',
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'TypeScript', 'Chart.js', 'OpenWeather API'],
-      githubUrl: 'https://github.com/DIKSINTH/RPS',
-      liveUrl: 'https://rock-paper-scissor-39.netlify.app/',
-      featured: false
+      title: "Rock Paper Scissor",
+      description:
+        "Rock-Paper-Scissors is a fun and responsive web game built using HTML, CSS, and JavaScript. Users can choose rock, paper, or scissors to play against the computer, with instant results and score updates. It showcases interactive logic, smooth UI behavior, and basic front-end development skills.",
+      image: rockpaperScissor,
+      technologies: ["HTML5", "CSS", "Javascript"],
+      githubUrl: "https://github.com/DIKSINTH/RPS",
+      liveUrl: "https://rock-paper-scissor-39.netlify.app/",
+      featured: false,
     },
     {
-      title: 'Play with Panda',
-      description: 'A comprehensive dashboard for managing multiple social media accounts and analytics.',
-      image: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['Next.js', 'Prisma', 'NextAuth.js', 'Tailwind CSS'],
-      githubUrl: 'https://github.com/DIKSINTH/Game',
-      liveUrl: 'https://play-with-panda.netlify.app/',
-      featured: false
+      title: "Play with Panda",
+      description:
+        "**Play with Panda** is a creative and engaging web mini-game designed using HTML, CSS, and JavaScript. It features animated visuals and playful interactions that allow users to interact with a cute panda character. The project highlights beginner-friendly front-end development with a focus on fun user experience and simple animations.",
+      image: playwithPanda,
+      technologies: ["HTML5", "CSS3", "Javascript"],
+      githubUrl: "https://github.com/DIKSINTH/Game",
+      liveUrl: "https://play-with-panda.netlify.app/",
+      featured: false,
     },
     {
-      title: 'QuickMath (Standard Calculator)',
-      description: 'A modern, responsive portfolio website with smooth animations and interactive elements.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'Framer Motion', 'Tailwind CSS', 'Vite'],
-      githubUrl: 'https://github.com/DIKSINTH/QuickMath',
-      liveUrl: 'https://diksinth.github.io/QuickMath/',
-      featured: false
+      title: "QuickMath (Standard Calculator)",
+      description:
+        "**QuickMath** is a simple and fast web application built using HTML, CSS, and JavaScript. It helps users solve basic math problems instantly, providing a clean layout and responsive interface. This project demonstrates core front-end development skills with a focus on user input handling and real-time result display.",
+      image: quickMath,
+      technologies: ["HTML5", "CSS3", "Javascript"],
+      githubUrl: "https://github.com/DIKSINTH/QuickMath",
+      liveUrl: "https://diksinth.github.io/QuickMath/",
+      featured: false,
     },
     {
-      title: 'My Portfolio',
-      description: 'An intelligent chatbot interface with natural language processing and machine learning capabilities.',
-      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['Python', 'Flask', 'OpenAI API', 'React', 'WebSocket'],
-      githubUrl: 'https://github.com/DIKSINTH/React_Portfolio',
-      liveUrl: '#',
-      featured: false
-    }
+      title: "My Portfolio",
+      description:
+        "This is a modern and responsive personal portfolio website built with React and TypeScript. It highlights my projects, skills, and experience with a clean design and smooth animations, making it easy for visitors to learn more about my work.",
+      image: myPortfolio,
+      technologies: [
+        "React.js",
+        "TypeScript",
+        "Framer Motion",
+        "Tailwind CSS",
+        "Lucide React",
+        "Vite",
+        "Netlify",
+      ],
+      githubUrl: "https://github.com/DIKSINTH/React_Portfolio",
+      liveUrl: "#",
+      featured: false,
+    },
+    {
+      title: "Cineverse 2024",
+      description:
+        "This is a modern and responsive personal portfolio website built with React and TypeScript. It highlights my projects, skills, and experience with a clean design and smooth animations, making it easy for visitors to learn more about my work.",
+      image: cineVerse2024,
+      technologies: ["HTML 3.2", "CSS", "Vercel"],
+      githubUrl: "https://github.com/DIKSINTH/Movie-Universe",
+      liveUrl: "https://cineverse2024.vercel.app/",
+      featured: false,
+    },
   ];
 
-  const featuredProjects = projects.filter(p => p.featured);
-  const otherProjects = projects.filter(p => !p.featured);
+  const featuredProjects = projects.filter((p) => p.featured);
+  const otherProjects = projects.filter((p) => !p.featured);
 
   return (
     <div className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
@@ -73,7 +110,10 @@ export const Projects: React.FC = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            My <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Projects</span>
+            My{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              Projects
+            </span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             A showcase of my work and technical expertise
@@ -87,7 +127,9 @@ export const Projects: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-16"
         >
-          <h2 className="text-3xl font-bold text-white mb-8">Featured Projects</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">
+            Featured Projects
+          </h2>
           <div className="grid lg:grid-cols-2 gap-8">
             {featuredProjects.map((project, index) => (
               <motion.div

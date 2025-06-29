@@ -1,36 +1,37 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Calendar, MapPin, ExternalLink } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Calendar, MapPin, ExternalLink } from "lucide-react";
 
 export const Experience: React.FC = () => {
   const experiences = [
     {
-      title: 'Full Stack Developer Intern',
-      company: 'Walachain Technologies',
-      location: 'Sattur, TamilNadu',
-      period: 'May, 2025 - Present',
+      title: "Full Stack Developer Intern",
+      company: "Walachain Technologies",
+      location: "Sattur, TamilNadu",
+      period: "May, 2025 - Present",
       description: [
-        'Led development of scalable web applications using React, Node.js, and MongoDB',
-        'Collaborated with cross-functional teams to deliver high-quality software solutions',
-        'Implemented CI/CD pipelines and improved deployment processes',
-        'Mentored junior developers and conducted code reviews'
+        "As a Full Stack Developer Intern at Walachain Technologies, I build complete web applications using both front-end and back-end technologies. I collaborate with the development team to create user-friendly interfacesand connect them to server-side logic and databases. Web Developer Intern, Aathesh Soft Infotech , PVT LTD",
       ],
-      technologies: ['React', 'Node.js', 'MongoDB', 'AWS', 'Docker']
+      technologies: [
+        "React",
+        "React Router",
+        "Redux",
+        "Node.js",
+        "MongoDB",
+        "Express.js",
+        "Tailwind CSS",
+      ],
     },
     {
-      title: 'Web Developer Intern',
-      company: 'Aathesh Softtech Infotech PVT LMD',
-      location: 'Sivakasi, TamilNadu',
-      period: 'May, 2024 - June, 2024 (1 Month)',
+      title: "Web Developer Intern",
+      company: "Aathesh Softtech Infotech PVT LMD",
+      location: "Sivakasi, TamilNadu",
+      period: "May, 2024 - June, 2024 (1 Month)",
       description: [
-        'Developed and maintained multiple client-facing web applications',
-        'Optimized application performance resulting in 40% faster load times',
-        'Integrated third-party APIs and payment processing systems',
-        'Participated in agile development processes and sprint planning'
+        "I completed an internship at Aathesh Soft Infotech Pvt. Ltd., Sivakasi, where I gained hands-on experience in the fundamentals of web design, focusing on HTML and CSS to build responsive and structured web layouts.",
       ],
-      technologies: ['Vue.js', 'Express.js', 'PostgreSQL', 'Redis', 'Stripe']
-    }
-   
+      technologies: ["HTML", "CSS"],
+    },
   ];
 
   return (
@@ -43,7 +44,10 @@ export const Experience: React.FC = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Work <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Experience</span>
+            Work{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              Experience
+            </span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             My professional journey and key achievements
@@ -65,14 +69,16 @@ export const Experience: React.FC = () => {
               >
                 {/* Timeline dot */}
                 <div className="absolute left-6 w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full border-4 border-slate-900 hidden md:block" />
-                
+
                 <div className="md:ml-20 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 p-8 hover:bg-white/20 transition-all duration-300 group">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                     <div>
                       <h3 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300">
                         {exp.title}
                       </h3>
-                      <p className="text-xl text-blue-400 font-medium">{exp.company}</p>
+                      <p className="text-xl text-blue-400 font-medium">
+                        {exp.company}
+                      </p>
                     </div>
                     <div className="flex flex-col sm:items-end mt-2 sm:mt-0">
                       <div className="flex items-center text-gray-300 mb-1">
@@ -89,7 +95,7 @@ export const Experience: React.FC = () => {
                   <ul className="space-y-2 mb-6">
                     {exp.description.map((item, i) => (
                       <li key={i} className="text-gray-300 flex items-start">
-                        <span className="text-blue-400 mr-3 mt-2">•</span>
+                        {/* <span className="text-blue-400 mr-3 mt-2">•</span> */}
                         {item}
                       </li>
                     ))}

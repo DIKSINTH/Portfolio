@@ -1,5 +1,5 @@
-import React from 'react';
-import { Heart, Code, Coffee } from 'lucide-react';
+import React from "react";
+import { Heart, Code, Home } from "lucide-react";
 
 export const Footer: React.FC = () => {
   return (
@@ -13,15 +13,15 @@ export const Footer: React.FC = () => {
             <Code size={16} className="text-blue-400" />
             <span>by Diksinth S</span>
           </div>
-          
+
           <div className="flex items-center space-x-2 text-gray-300">
-            <Coffee size={16} className="text-amber-500 animate-bounce" />
+            <Home size={16} className="text-amber-500 animate-bounce" />
             <span className="text-sm">
               © {new Date().getFullYear()} All rights reserved
             </span>
           </div>
         </div>
-        
+
         <div className="mt-6 pt-6 border-t border-white/10 text-center">
           <p className="text-gray-400 text-sm">
             Built with React, TypeScript, Tailwind CSS, and Framer Motion

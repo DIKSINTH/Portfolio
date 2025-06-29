@@ -1,13 +1,14 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Award, Book, Coffee, Heart } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Award, Book, Heart, Code } from "lucide-react";
+import Diksinth from "../images/diksinth.jpg"; // Adjust the path as needed
 
 export const About: React.FC = () => {
   const stats = [
-    { icon: Award, label: 'Years Experience', value: '0' },
-    { icon: Book, label: 'Projects Completed', value: '5+' },
-    { icon: Coffee, label: 'Cups of Coffee', value: '50+' },
-    { icon: Heart, label: 'Happy Clients', value: '0' },
+    { icon: Award, label: "Years Experience", value: "0" },
+    { icon: Book, label: "Projects Completed", value: "6+" },
+    { icon: Code, label: "Lines of Code", value: "4,000+" },
+    { icon: Heart, label: "Happy Clients", value: "0" },
   ];
 
   return (
@@ -20,10 +21,13 @@ export const About: React.FC = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            About <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Me</span>
+            About{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              Me
+            </span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Passionate about creating digital experiences that make a difference
+            I enjoy creating simple and helpful digital experiences for people
           </p>
         </motion.div>
 
@@ -36,7 +40,11 @@ export const About: React.FC = () => {
             <div className="relative">
               <div className="w-full h-96 bg-gradient-to-br from-blue-500/20 to-purple-600/20 rounded-2xl backdrop-blur-sm border border-white/10 flex items-center justify-center">
                 <div className="w-64 h-64 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-6xl font-bold">
-                  DS
+                  <img
+                    src={Diksinth}
+                    style={{ borderRadius: "90%" }}
+                    alt="diksinth"
+                  ></img>
                 </div>
               </div>
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-emerald-400 to-blue-500 rounded-full opacity-70 animate-pulse" />
@@ -52,18 +60,22 @@ export const About: React.FC = () => {
           >
             <h2 className="text-3xl font-bold text-white mb-6">My Story</h2>
             <p className="text-gray-300 text-lg leading-relaxed">
-              I'm a dedicated Full Stack Developer with a passion for creating innovative 
-              digital solutions. My journey in technology began with curiosity and has 
-              evolved into a career focused on building user-centric applications.
+              I'm a fresher Full Stack Developer with a strong interest in
+              building useful and user-friendly web applications. My journey
+              started with curiosity about how websites work, and now I'm
+              excited to turn that interest into real projects.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              With expertise in modern web technologies, I enjoy tackling complex problems 
-              and turning ideas into reality. I believe in writing clean, maintainable code 
-              and staying updated with the latest industry trends.
+              I'm learning and working with modern technologies like HTML, CSS,
+              JavaScript, React, and Node.js. I enjoy solving problems, writing
+              clean code, and improving my skills every day.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing 
-              to open-source projects, or sharing knowledge with the developer community.
+              When I'm not coding, I like exploring new tools, building small
+              projects, and learning from the developer community.
+            </p>
+            <p className="text-gray-300 text-lg leading-relaxed">
+              "I learn something new every day—even if it's small."
             </p>
           </motion.div>
         </div>
