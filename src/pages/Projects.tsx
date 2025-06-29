@@ -83,7 +83,7 @@ export const Projects: React.FC = () => {
       ],
       githubUrl: "https://github.com/DIKSINTH/React_Portfolio",
       liveUrl: "https://diksinth-s-portfolio.netlify.app/",
-      featured: false,
+      featured: true,
     },
     {
       title: "Cineverse 2024",
