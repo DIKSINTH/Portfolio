@@ -88,7 +88,7 @@ export const Projects: React.FC = () => {
     {
       title: "Cineverse 2024",
       description:
-        "This is a modern and responsive personal portfolio website built with React and TypeScript. It highlights my projects, skills, and experience with a clean design and smooth animations, making it easy for visitors to learn more about my work.",
+        "Cineverse 2024 is a simple movie website made with only HTML and CSS. It shows movie details using clean and basic web design.",
       image: cineVerse2024,
       technologies: ["HTML 3.2", "CSS", "Vercel"],
       githubUrl: "https://github.com/DIKSINTH/Movie-Universe",
