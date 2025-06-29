@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
 import Diksinth from "../images/diksinth.jpg"; // Adjust the path as needed
+import myResume from "../docs/diksinth_resume.pdf";
+
 export const Home: React.FC = () => {
   function handleDownload() {
     const link = document.createElement("a");
-    link.href = "./diksinth_resume.pdf"; // path from public folder
+    link.href = myResume; // path from public folder
     link.download = "Diksinth_S_Resume.pdf"; // download name
     link.click();
   }
