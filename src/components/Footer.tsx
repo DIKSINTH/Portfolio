@@ -22,11 +22,11 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-6 pt-6 border-t border-white/10 text-center">
+        {/* <div className="mt-6 pt-6 border-t border-white/10 text-center">
           <p className="text-gray-400 text-sm">
             Built with React, TypeScript, Tailwind CSS, and Framer Motion
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
