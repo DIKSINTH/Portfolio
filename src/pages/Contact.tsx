@@ -9,6 +9,7 @@ import {
   Linkedin,
   Twitter,
 } from "lucide-react";
+import emailjs from "emailjs-com";
 
 export const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -19,6 +20,7 @@ export const Contact: React.FC = () => {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [success, setSuccess] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -32,20 +34,37 @@ export const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSuccess(null);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    // Replace with your actual EmailJS service/template/public key
+    const serviceId = "your_service_id";
+    const templateId = "your_template_id";
+    const publicKey = "your_public_key";
 
-    console.log("Form submitted:", formData);
+    try {
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        publicKey
+      );
+      setSuccess("Message sent successfully!");
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    } catch (error) {
+      setSuccess("Failed to send message. Please try again later.");
+    }
     setIsSubmitting(false);
-
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
   };
 
   const contactInfo = [
@@ -241,6 +260,18 @@ export const Contact: React.FC = () => {
                   placeholder="Tell me about your project or just say hello!"
                 />
               </div>
+
+              {success && (
+                <div
+                  className={`text-center font-medium ${
+                    success.includes("success")
+                      ? "text-green-400"
+                      : "text-red-400"
+                  }`}
+                >
+                  {success}
+                </div>
+              )}
 
               <motion.button
                 type="submit"
