@@ -1,68 +1,82 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  Github,
+  Linkedin,
+  Twitter,
+} from "lucide-react";
 
 export const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    console.log('Form submitted:', formData);
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
+    console.log("Form submitted:", formData);
     setIsSubmitting(false);
-    
+
     // Reset form
     setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
     });
   };
 
   const contactInfo = [
     {
       icon: Mail,
-      label: 'Email',
-      value: 'diksinth@example.com',
-      href: 'mailto:diksinth@example.com'
+      label: "Email",
+      value: "diksinth1@gmail.com",
+      href: "mailto:diksinth1@gmail.com",
     },
     {
       icon: Phone,
-      label: 'Phone',
-      value: '+919042594468',
-      href: 'tel:+919042594468'
+      label: "Phone",
+      value: "+919042594468",
+      href: "tel:+919042594468",
     },
     {
       icon: MapPin,
-      label: 'Location',
-      value: 'Sivakasi, Tamil Nadu',
-      href: '#'
-    }
+      label: "Location",
+      value: "Sivakasi, Tamil Nadu",
+      href: "#",
+    },
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/DIKSINTH', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/diksinth-s/', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://x.com/DiksinthS', label: 'Twitter' },
+    { icon: Github, href: "https://github.com/DIKSINTH", label: "GitHub" },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/diksinth-s/",
+      label: "LinkedIn",
+    },
+    { icon: Twitter, href: "https://x.com/DiksinthS", label: "Twitter" },
   ];
 
   return (
@@ -75,7 +89,10 @@ export const Contact: React.FC = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Get In <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Touch</span>
+            Get In{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              Touch
+            </span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Let's discuss your next project or just say hello
@@ -93,8 +110,9 @@ export const Contact: React.FC = () => {
             <div>
               <h2 className="text-3xl font-bold text-white mb-6">Let's Talk</h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                I'm always interested in new opportunities, exciting projects, and great conversations. 
-                Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                I'm always interested in new opportunities, exciting projects,
+                and great conversations. Whether you have a question or just
+                want to say hi, I'll try my best to get back to you!
               </p>
             </div>
 
@@ -149,7 +167,10 @@ export const Contact: React.FC = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-white font-medium mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-white font-medium mb-2"
+                  >
                     Name *
                   </label>
                   <input
@@ -164,7 +185,10 @@ export const Contact: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-white font-medium mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-white font-medium mb-2"
+                  >
                     Email *
                   </label>
                   <input
@@ -181,7 +205,10 @@ export const Contact: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-white font-medium mb-2">
+                <label
+                  htmlFor="subject"
+                  className="block text-white font-medium mb-2"
+                >
                   Subject *
                 </label>
                 <input
@@ -197,7 +224,10 @@ export const Contact: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-white font-medium mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-white font-medium mb-2"
+                >
                   Message *
                 </label>
                 <textarea
@@ -218,9 +248,9 @@ export const Contact: React.FC = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className={`w-full flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium rounded-lg transition-all duration-300 ${
-                  isSubmitting 
-                    ? 'opacity-70 cursor-not-allowed' 
-                    : 'hover:from-blue-600 hover:to-purple-700 hover:shadow-lg'
+                  isSubmitting
+                    ? "opacity-70 cursor-not-allowed"
+                    : "hover:from-blue-600 hover:to-purple-700 hover:shadow-lg"
                 }`}
               >
                 {isSubmitting ? (
@@ -228,7 +258,7 @@ export const Contact: React.FC = () => {
                 ) : (
                   <Send size={20} className="mr-2" />
                 )}
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {isSubmitting ? "Sending..." : "Send Message"}
               </motion.button>
             </form>
           </motion.div>
