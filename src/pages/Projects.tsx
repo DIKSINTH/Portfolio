@@ -6,14 +6,13 @@ import tictacToe from "../images/ttt.jpg"; // Adjust the path as needed
 import rockpaperScissor from "../images/rps.jpg"; // Adjust the path as needed
 import playwithPanda from "../images/play_with_panda.jpg"; // Adjust the path as needed
 import quickMath from "../images/quickmath.jpg"; // Adjust the path as needed
-import myPortfolio from "../images/my_portfolio.jpg"; // Adjust the path as needed
 import cineVerse2024 from "../images/cineverse2024.jpg"; // Adjust the path as needed
 export const Projects: React.FC = () => {
   const projects = [
     {
-      title: "Cineverse",
+      title: "Cineflix",
       description:
-        "Cineverse 2025 is a modern, responsive movie browsing web app built using React.js. It allows users to search view movie details, and explore genres in an easy-to-use interface. The app features dynamic routing, clean UI, and real-time filtering, simulating an IMDb-style experience for movie enthusiasts.",
+        "Cineflix 2025 is a modern, responsive movie browsing web app built using React.js. It allows users to search view movie details, and explore genres in an easy-to-use interface. The app features dynamic routing, clean UI, and real-time filtering, simulating an IMDb-style experience for movie enthusiasts.",
       image: cineverseImage,
       technologies: [
         "React.js",
@@ -67,24 +66,24 @@ export const Projects: React.FC = () => {
       liveUrl: "https://diksinth.github.io/QuickMath/",
       featured: false,
     },
-    {
-      title: "My Portfolio",
-      description:
-        "This is a modern and responsive personal portfolio website built with React and TypeScript. It highlights my projects, skills, and experience with a clean design and smooth animations, making it easy for visitors to learn more about my work.",
-      image: myPortfolio,
-      technologies: [
-        "React.js",
-        "TypeScript",
-        "Framer Motion",
-        "Tailwind CSS",
-        "Lucide React",
-        "Vite",
-        "Netlify",
-      ],
-      githubUrl: "https://github.com/DIKSINTH/React_Portfolio",
-      liveUrl: "https://diksinth-s-portfolio.netlify.app/",
-      featured: true,
-    },
+    // {
+    //   title: "My Portfolio",
+    //   description:
+    //     "This is a modern and responsive personal portfolio website built with React and TypeScript. It highlights my projects, skills, and experience with a clean design and smooth animations, making it easy for visitors to learn more about my work.",
+    //   image: myPortfolio,
+    //   technologies: [
+    //     "React.js",
+    //     "TypeScript",
+    //     "Framer Motion",
+    //     "Tailwind CSS",
+    //     "Lucide React",
+    //     "Vite",
+    //     "Netlify",
+    //   ],
+    //   githubUrl: "https://github.com/DIKSINTH/React_Portfolio",
+    //   liveUrl: "https://diksinth-s-portfolio.netlify.app/",
+    //   featured: true,
+    // },
     {
       title: "Cineverse 2024",
       description:
