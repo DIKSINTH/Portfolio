@@ -1,13 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  Code,
-  Database,
-  Globe,
-  Smartphone,
-  Cloud,
-  Settings,
-} from "lucide-react";
+import { Code, Database, Globe, Cloud, Settings } from "lucide-react";
 
 export const Skills: React.FC = () => {
   const skillCategories = [
@@ -58,6 +51,7 @@ export const Skills: React.FC = () => {
         { name: "VS Code", level: 98 },
         { name: "Figma", level: 85 },
         { name: "Postman", level: 90 },
+        { name: "Vite. js", level: 95 },
       ],
     },
   ];
