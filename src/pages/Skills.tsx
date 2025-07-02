@@ -22,7 +22,6 @@ export const Skills: React.FC = () => {
       skills: [
         { name: "Node.js", level: 92 },
         { name: "Express.js", level: 90 },
-        { name: "Python", level: 85 },
       ],
     },
     {
