@@ -14,6 +14,7 @@ export const Skills: React.FC = () => {
         { name: "HTML", level: 95 },
         { name: "CSS", level: 85 },
         { name: "React Router", level: 80 },
+        { name: "Redux", level: 82 },
       ],
     },
     {
