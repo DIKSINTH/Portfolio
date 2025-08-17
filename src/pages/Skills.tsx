@@ -10,17 +10,18 @@ export const Skills: React.FC = () => {
       skills: [
         { name: "React", level: 90 },
         { name: "Tailwind CSS", level: 90 },
-
         { name: "HTML", level: 95 },
         { name: "CSS", level: 85 },
-        { name: "React Router", level: 80 },
         { name: "Redux. js", level: 82 },
       ],
     },
     {
       title: "Backend Development",
       icon: Code,
-      skills: [{ name: "Java", level: 92 }],
+      skills: [
+        { name: "Java", level: 92 },
+        { name: "Python", level: 90 },
+      ],
     },
     {
       title: "Database & Storage",
@@ -43,8 +44,6 @@ export const Skills: React.FC = () => {
         { name: "Git", level: 95 },
         { name: "GitHub", level: 95 },
         { name: "VS Code", level: 98 },
-        { name: "Figma", level: 85 },
-        { name: "Postman", level: 90 },
         { name: "Vite. js", level: 95 },
       ],
     },
