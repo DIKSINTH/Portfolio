@@ -47,7 +47,7 @@ export const Contact: React.FC = () => {
         templateId,
         {
           from_name: formData.name, // must match your EmailJS template field
-          from_email: formData.email, // must match your EmailJS template field
+          email: formData.email, // must match your EmailJS template field
           subject: formData.subject, // must match your EmailJS template field
           message: formData.message, // must match your EmailJS template field
         },
