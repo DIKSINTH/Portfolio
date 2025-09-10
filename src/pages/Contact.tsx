@@ -36,33 +36,33 @@ export const Contact: React.FC = () => {
     setIsSubmitting(true);
     setSuccess(null);
 
-    // Replace with your actual EmailJS service/template/public key
-    const serviceId = "your_service_id";
-    const templateId = "your_template_id";
-    const publicKey = "your_public_key";
+    // ✅ Your actual EmailJS details
+    const serviceId = "service_suruomi";
+    const templateId = "template_e34x3kn";
+    const publicKey = "5YlvhIKMtpMo11cdz";
 
     try {
       await emailjs.send(
         serviceId,
         templateId,
         {
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
+          from_name: formData.name, // must match your EmailJS template field
+          from_email: formData.email, // must match your EmailJS template field
+          subject: formData.subject, // must match your EmailJS template field
+          message: formData.message, // must match your EmailJS template field
         },
         publicKey
       );
-      setSuccess("Message sent successfully!");
+      setSuccess("✅ Message sent successfully!");
       setFormData({
         name: "",
         email: "",
         subject: "",
         message: "",
       });
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    } catch (error) {
-      setSuccess("Failed to send message. Please try again later.");
+    } catch (error: unknown) {
+      console.error("EmailJS Error Details:", error);
+      setSuccess("❌ Failed to send message. Please try again later.");
     }
     setIsSubmitting(false);
   };
@@ -71,8 +71,8 @@ export const Contact: React.FC = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "diksinth1@gmail.com",
-      href: "mailto:diksinth1@gmail.com",
+      value: "diksinth4@gmail.com",
+      href: "mailto:diksinth4@gmail.com",
     },
     {
       icon: Phone,
