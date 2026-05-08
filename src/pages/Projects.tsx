@@ -10,20 +10,19 @@ import cineVerse2024 from "../images/cineverse2024.jpg"; // Adjust the path as n
 export const Projects: React.FC = () => {
   const projects = [
     {
-      title: "Cineflix",
+      title: "Cady Infotech",
       description:
-        "Cineflix 2025 is a modern, responsive movie browsing web app built using React.js. It allows users to search view movie details, and explore genres in an easy-to-use interface. The app features dynamic routing, clean UI, and real-time filtering, simulating an IMDb-style experience for movie enthusiasts.",
+        "A responsive full-stack company website developed using React.js, Tailwind CSS, Node.js, Express.js, and MySQL, featuring a modern UI, secure backend functionality, and efficient data management.",
       image: cineverseImage,
       technologies: [
         "React.js",
         "Tailwind CSS",
-        "React Router DOM",
-        "Framer Motion",
-        "GSAP",
-        "Lenis",
+        "Node.js",
+        "Express.js",
+        "MySQL",
+        "AOS",
       ],
-      githubUrl: "https://github.com/DIKSINTH/cineflix",
-      liveUrl: "https://cineverse2025.netlify.app/",
+      liveUrl: "https://cadyinfotech.com/",
       featured: true,
     },
     {
