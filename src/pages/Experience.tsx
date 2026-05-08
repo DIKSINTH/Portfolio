@@ -6,22 +6,34 @@ import { Link } from "react-router-dom";
 export const Experience: React.FC = () => {
   const experiences = [
     {
-      title: "Full Stack Developer Intern",
-      company: "Walachain Technologies",
-      location: "Sattur, TamilNadu",
-      period: "May, 2025 - Present",
+      title: "Full-Stack Developer",
+      company: "APS Infotech Solutions",
+      location: "Erichanatham, Virudhunagar, Tamil Nadu",
+      period: "Aug 2025 - Present",
       description: [
-        "As a Full Stack Developer Intern at Walachain Technologies, I build complete web applications using both front-end and back-end technologies. I collaborate with the development team to create user-friendly interfacesand connect them to server-side logic and databases. Web Developer Intern, Aathesh Soft Infotech , PVT LTD",
+        "Working as a Full-Stack Developer, building responsive web applications and admin dashboards using modern frontend and backend technologies.",
+        "Developing and maintaining scalable applications with React.js, Node.js, Express.js, and MySQL, including CRUD operations, authentication, and API integration.",
       ],
       technologies: [
-        "React",
+        "React JS",
         "React Router",
-        "Redux",
-        "Node.js",
-        "MongoDB",
-        "Express.js",
         "Tailwind CSS",
+        "Node JS",
+        "Express JS",
+        "MySQL",
+        "Git",
+        "GitHub",
       ],
+    },
+    {
+      title: "Front-end Developer Intern",
+      company: "Walachain Technologies",
+      location: "Sattur, TamilNadu",
+      period: "May, 2025 - July, 2025 (2 Months)",
+      description: [
+        "As a Front-end Developer Intern at Walachain Technologies, I build complete web applications using front-end Technologies. I collaborate with the development team to create user-friendly interfaces. ",
+      ],
+      technologies: ["React", "React Router", "Tailwind CSS", "Git", "Github"],
     },
     {
       title: "Web Developer Intern",
