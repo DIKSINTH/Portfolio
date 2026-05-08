@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
 import Diksinth from "../images/diksinth.jpg"; // Adjust the path as needed
-import myResume from "../docs/diksinth_resume.pdf";
+import myResume from "../docs/Diksinth_S_Resume.pdf";
 
 export const Home: React.FC = () => {
   function handleDownload() {
